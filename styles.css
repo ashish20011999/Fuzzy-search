@@ -1,0 +1,81 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Use full viewport height */
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header .logo {
+  width: 100px; /* Adjust the width of the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Add some spacing between logo and header */
+}
+
+header h1 {
+  font-size: 20px; /* Adjust the font size */
+  margin: 0;
+}
+
+.container {
+  margin: 0;
+  padding: 20px 0 20px 5%; /* Adjust padding to create space from the left */
+}
+
+#searchInput {
+  width: 20%; /* Set the width of the search bar to approximately 20% */
+  max-width: 200px; /* Define a maximum width if necessary */
+  padding: 10px;
+  font-size: 16px;
+  border: 3px solid #000; /* Thicker black border */
+  border-radius: 8px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in the total width */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add a hover effect */
+#searchInput:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Highlighted shadow on hover */
+}
+
+/* Fruits list container styles */
+.fruits-list-container {
+  width: 90%; /* Set the width to 90% of the viewport width */
+  margin: 0 auto;
+  border: 1px solid #ccc; /* Border similar to the search bar */
+  overflow-y: auto; /* Enable vertical scroll */
+  flex: 1; /* Occupy remaining vertical space */
+}
+
+/* Fruits list item styles */
+#fruitsList {
+  list-style: none;
+  padding: 0;
+}
+
+#fruitsList li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee; /* Separating lines between items */
+}
+
+#fruitsList li img {
+  width: 30px; /* Adjust the width of the logos as needed */
+  height: 30px; /* Adjust the height of the logos as needed */
+  margin-right: 10px;
+}
